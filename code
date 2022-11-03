@@ -1,0 +1,49 @@
+const int RELAY_PIN_Y0 = PB5;  // the Arduino pin, which connects to the IN pin of relay
+const int RELAY_PIN_Y1 =  PB6;
+const int RELAY_PIN_Y2 =  PB7;
+const int RELAY_PIN_Y3 =  PC13;
+const int RELAY_PIN_Y4 =  PA1;
+const int RELAY_PIN_Y5 =  PA0;
+
+// the setup function runs once when you press reset or power the board
+void setup() {
+  // initialize digital pin as an output.
+    pinMode(RELAY_PIN_Y0, OUTPUT);
+    pinMode(RELAY_PIN_Y1, OUTPUT);
+    pinMode(RELAY_PIN_Y2, OUTPUT);
+    pinMode(RELAY_PIN_Y3, OUTPUT);
+    pinMode(RELAY_PIN_Y4, OUTPUT);
+    pinMode(RELAY_PIN_Y5, OUTPUT);
+ 
+  
+}
+
+// the loop function runs over and over again forever
+void loop() {
+  
+  digitalWrite(RELAY_PIN_Y0, HIGH);
+  delay(500);
+  digitalWrite(RELAY_PIN_Y0, LOW);
+  delay(500);
+  digitalWrite(RELAY_PIN_Y1, HIGH);
+  delay(500);
+  digitalWrite(RELAY_PIN_Y1, LOW);
+  delay(500);
+  digitalWrite(RELAY_PIN_Y2, HIGH);
+  delay(500);
+  digitalWrite(RELAY_PIN_Y2, LOW);
+  delay(500);
+  digitalWrite(RELAY_PIN_Y3, HIGH);
+  delay(500);
+  digitalWrite(RELAY_PIN_Y3, LOW);
+  delay(500);
+  digitalWrite(RELAY_PIN_Y4, HIGH);
+  delay(500);
+  digitalWrite(RELAY_PIN_Y4, LOW);
+  delay(500);
+  digitalWrite(RELAY_PIN_Y5, HIGH);
+  delay(500);
+  digitalWrite(RELAY_PIN_Y5, LOW);
+  delay(500);
+  
+}
